@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/392f672467.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+
+        <nav>
+            <h2 class="logo">Portfoli<span>o</span></h2>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>BSEMC-DAT UNDERGRADUATE</p>
+            <h1>Hi! I'm <span>Hanna</span><br>From Bukidnon</h1>
+        </div>
+    </div>
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Hanna.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Hanna</h1>
+                <p>Hanna Princess Rodrigo is an undergraduate with a Bachelor of Science in Entertainment and Multimedia Computing majoring in Digital Animation Technology and is looking for a studio to work as an intern. She is passionate about arts and crafts and she took it to the next level by studying 3D arts. She is fond of conceptualizing ideas with everyone to be produced in any dimension for entertainment and is also amazed at creating 2D games and software as to which she is extremely interested in utilizing her learnings and to be taught in a professional environment.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>3D Modelling</span><br>Develops 3D objects</li>
+                        <li><span>2D Animation</span><br>Develops 2D animation and games</li>
+                        <li><span>UX</span><br>Designing Web/User Experience</li>
+                        <li><span>App Development</span><br>Building Android apps | Unity</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - 2022</span><br>Studied 3D modelling, rigging on Blender software along with developing Android apps and 2D games on Unity</li>
+                        <li><span>2019 - 2020</span><br>Studied C++ programming, 2D game developing on Unity</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019 - Current</span><br>BSEMC-DAT at Bukidnon State University</li>
+                        <li><span>2013 - 2019</span><br>Bukidnon National High School</li>
+                        <li><span>2006 - 2013</span><br>Sarayan Elementary School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----SERVICES------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>3D Design</h2>
+                <p>Can create 3D designs, models, and animations</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>2D Design</h2>
+                <p>Creates 2D related animation and games</p>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Has experience in conceptualizing UX designs and android application production.</p>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--------PORTFOLIO--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <video autoplay loop muted plays-inline class="house">
+                    <source src="Portfolio/house.mp4" type="video/mp4">
+                </video>
+                <img src="Portfolio/Podium.png">
+                <div class="layer">
+                    <h3>Lighting & Effects in Blender</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Portfolio/img2.png">
+                <img src="Portfolio/img12.png">
+                <div class="layer">
+                    <h3>A Composite Lava Texture and Character Modelling in Blender</h3>
+                </div>
+            </div>
+            <div class="work">
+                <video autoplay loop muted plays-inline class="cuboid">
+                    <source src="Portfolio/Cuboid.mp4" type="video/mp4">
+                </video>
+                <div class="layer">
+                    <h3>Aesthetic</h3>
+                </div>
+            </div>
+        </div>
+
+        <a href="#contact" class="btn">See more</a>
+    </div>
+</div>
+
+<!-------CONTACT-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hprodrigo@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09361423956</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/hannapie.025"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/potatofries.25"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hanna-princess-rodrigo-772487255/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Easy Tutorials. Made with <i class="fa-solid fa-heart"></i> by Hanna</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sideMenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sideMenu.style.right = "0";
+    }
+    function closemenu(){
+        sideMenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTuvFn6S0kng8h85trxjyXS8bX-CK6P958fSIqoXLp6QZYdnpKpod8usI5ymc2Rwem/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById ("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
